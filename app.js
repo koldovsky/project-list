@@ -10,9 +10,6 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', 'studentService', '$timeout',
   
   loadStudents();
   
-  //*******************
-  // Internal Methods
-  //*******************
   function loadStudents() {
     studentService.loadAll()
       .then(function(students){
@@ -42,8 +39,8 @@ app.service('studentService', ['$q', function($q) {
       codeSourceUrl: 'https://github.com/yryzhkov/forecast',
       content: 'My hobby is to create websites'
   }, {
-      name: 'Yuriy Ryzhkov',
-      photo: 'images/students/ryzhkov_yuriy.jpg',
+      name: 'Khrystyna Kurylas',
+      photo: 'images/students/kurylas_khrystyna.jpg',
       websiteUrl: 'http://yryzhkov.github.io/forecast/index.html',
       codeSourceUrl: 'https://github.com/yryzhkov/forecast',
       content: 'My hobby is to create websites'
