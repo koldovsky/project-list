@@ -12,19 +12,19 @@
       <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button menuBtn">
         <md-icon aria-label="Menu" md-svg-icon="images/menu.svg"></md-icon>
       </md-button>
-      <h1 layout-align-gt-sm="center" class="md-toolbar-tools">Group LV-154.HTML5<br><br>
-         subgroups:
-         <span ng-repeat="subgroup in subgroups">
-           <md-checkbox ng-checked="exists(subgroup, selectedsubgroups" ng-click="toggle(subgroup, selectedsubgroups">
-             {{subgroup}}
-           </md-checkbox>
-         </span> 
-      </h1>
+      <h1 layout-align-gt-sm="center" class="md-toolbar-tools">Group LV-154.HTML5</h1>
     </md-toolbar>
     <div layout="row" flex class="content-wrapper">
         <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+        <div  layout="row"><p style="margin: 11px;">Subgroup:</p>
+         <div ng-repeat="subgroup in subgroups">
+           <md-checkbox ng-checked="exists(subgroup, selectedsubgroups)" ng-click="toggle(subgroup, selectedsubgroups)">
+             {{subgroup}}
+           </md-checkbox>
+         </div>
+        </div>
           <md-list class="student-list">
-            <md-item ng-repeat="student in students">
+            <md-item ng-repeat="student in students | filter: filterBySubgroup">
               <md-item-content>
                 <md-button ng-click="selectStudent(student)" ng-class="{'selected' : student === selected }">
                   <img ng-src="{{student.photo}}" class="face" alt="">

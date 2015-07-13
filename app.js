@@ -5,7 +5,7 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', 'studentService', '$timeout',
   
   $scope.subgroups = [1,2,3];
   $scope.selectedsubgroups = [1,2,3];
-  function toggle(item, list) {
+  $scope.toggle = function (item, list) {
     var idx = list.indexOf(item);
     if (idx >-1) {
       list.splice(idx, 1);
@@ -13,10 +13,14 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', 'studentService', '$timeout',
       list.push(item);
     }
   };
-  function exists(item, list) {
+  $scope.exists = function(item, list) {
     return list.indexOf(item) > -1;
-  }
-  
+  };
+
+    $scope.filterBySubgroup = function (student) {
+        return $scope.exists(student.subgroup, $scope.selectedsubgroups);
+    }
+
   
   $scope.selected = null;
   $scope.students = allStudents;
@@ -53,24 +57,28 @@ app.service('studentService', ['$q', function($q) {
   //154.1
   var students = [{
       name: 'Yuriy Ryzhkov',
+      subgroup: 1,
       photo: 'images/students/ryzhkov_yuriy.jpg',
       websiteUrl: 'http://yryzhkov.github.io/forecast/index.html',
       codeSourceUrl: 'https://github.com/yryzhkov/forecast',
       content: 'My hobby is to create websites'
   }, {
       name: 'Khrystyna Kurylas',
+      subgroup: 2,
       photo: 'images/students/kurylas_khrystyna.jpg',
       websiteUrl: 'http://yryzhkov.github.io/forecast/index.html',
       codeSourceUrl: 'https://github.com/yryzhkov/forecast',
       content: 'My hobby is to create websites'
   }, {
       name: 'Yuriy Ryzhkov',
+      subgroup: 3,
       photo: 'images/students/ryzhkov_yuriy.jpg',
       websiteUrl: 'http://yryzhkov.github.io/forecast/index.html',
       codeSourceUrl: 'https://github.com/yryzhkov/forecast',
       content: 'My hobby is to create websites'
   }, {
       name: 'Yuriy Ryzhkov',
+      subgroup: 1,
       photo: 'images/students/ryzhkov_yuriy.jpg',
       websiteUrl: 'http://yryzhkov.github.io/forecast/index.html',
       codeSourceUrl: 'https://github.com/yryzhkov/forecast',
