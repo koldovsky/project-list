@@ -3,6 +3,21 @@ var app = angular.module('GroupApp', ['ngMaterial']);
 app.controller('AppCtrl', ['$scope', '$mdSidenav', 'studentService', '$timeout','$log', function($scope, $mdSidenav, studentService, $timeout, $log) {
   var allStudents = [];
   
+  $scope.subgroups = [1,2,3];
+  $scope.selectedsubgroups = [1,2,3];
+  function toggle(item, list) {
+    var idx = list.indexOf(item);
+    if (idx >-1) {
+      list.splice(idx, 1);
+    } else {
+      list.push(item);
+    }
+  };
+  function exists(item, list) {
+    return list.indexOf(item) > -1;
+  }
+  
+  
   $scope.selected = null;
   $scope.students = allStudents;
   $scope.selectStudent = selectStudent;
@@ -17,16 +32,20 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', 'studentService', '$timeout',
         $scope.students = [].concat(students);
         $scope.selected = $scope.students[0];
       })
-  }
+  };
   
   function toggleSidenav(name) {
     $mdSidenav(name).toggle();
-  }
+  };
   
   function selectStudent(student) {
     $scope.selected = angular.isNumber(student) ? $scope.students[student] : student;
     $scope.toggleSidenav('left');
-  }
+  };
+  
+  
+  
+  
 }])
 
 
