@@ -56,19 +56,12 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', 'studentService', '$timeout',
 app.service('studentService', ['$q', function($q) {
   //154.1
   var students = [{
-      name: 'Viacheslav Sadovenko',
+      name: 'Andrew Migal',
       subgroup: 1,
-      photo: 'images/students/sadovenko_viacheslav.jpg',
-      websiteUrl: 'http://sadovenko.github.io/',
-      codeSourceUrl: 'https://github.com/sadovenko/sadovenko.github.io',
+      photo: 'images/students/migal_andrew.jpg',
+      websiteUrl: 'http://andrewmigal.github.io/Weather1/',
+      codeSourceUrl: 'https://github.com/AndrewMigal/Weather-Forecast/tree/gh-pages',
       cvUrl: null
-  }, {
-      name: 'Yuriy Ryzhkov',
-      subgroup: 1,
-      photo: 'images/students/ryzhkov_yuriy.jpg',
-      websiteUrl: 'http://yryzhkov.github.io/forecast/index.html',
-      codeSourceUrl: 'https://github.com/yryzhkov/forecast/tree/gh-pages',
-      cvUrl: 'https://github.com/yryzhkov/forecast/blob/gh-pages/CV/CV_Yuriy_Ryzhkov.pdf'
   }, {
       name: 'Alexander Krasnovskyy',
       subgroup: 1,
@@ -83,6 +76,20 @@ app.service('studentService', ['$q', function($q) {
       websiteUrl: 'http://mkirpichnik.github.io/weather/',
       codeSourceUrl: 'https://github.com/mkirpichnik/weather/tree/gh-pages',
       cvUrl: 'https://drive.google.com/file/d/0B-izUUvW5UGSQkVXamZwZ3lXeVk/view?usp=sharing'
+  }, {
+      name: 'Viacheslav Sadovenko',
+      subgroup: 1,
+      photo: 'images/students/sadovenko_viacheslav.jpg',
+      websiteUrl: 'http://sadovenko.github.io/',
+      codeSourceUrl: 'https://github.com/sadovenko/sadovenko.github.io',
+      cvUrl: null
+  }, {
+      name: 'Yuriy Ryzhkov',
+      subgroup: 1,
+      photo: 'images/students/ryzhkov_yuriy.jpg',
+      websiteUrl: 'http://yryzhkov.github.io/forecast/index.html',
+      codeSourceUrl: 'https://github.com/yryzhkov/forecast/tree/gh-pages',
+      cvUrl: 'https://github.com/yryzhkov/forecast/blob/gh-pages/CV/CV_Yuriy_Ryzhkov.pdf'
   }, {
       name: 'Yuriy Ivanskyi',
       subgroup: 1,
@@ -119,13 +126,7 @@ app.service('studentService', ['$q', function($q) {
       codeSourceUrl: 'https://github.com/VolodymyrKor/Truthful_Weather',
       cvUrl: 'https://github.com/VolodymyrKor/Truthful_Weather/blob/gh-pages/files/%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5_%D0%9A%D0%BE%D1%80%D0%BD%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%92_%D0%A0.pdf'
   }, {
-      name: 'Andrew Migal',
-      subgroup: 1,
-      photo: 'images/students/migal_andrew.jpg',
-      websiteUrl: 'http://andrewmigal.github.io/Weather1/',
-      codeSourceUrl: 'https://github.com/AndrewMigal/Weather-Forecast/tree/gh-pages',
-      cvUrl: null
-  }, {
+  // 154.2
       name: 'Dmytro Chaschin',
       subgroup: 2,
       photo: 'images/students/chaschin_dmytro.jpg',
@@ -175,6 +176,7 @@ app.service('studentService', ['$q', function($q) {
       codeSourceUrl: 'https://github.com/Isukanets/w',
       cvUrl: null
   }, {
+  // 154.3
       name: 'Yevheniy Potupa',
       subgroup: 3,
       photo: 'images/students/potupa_yevheniy.jpg',
