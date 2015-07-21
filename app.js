@@ -137,8 +137,8 @@ app.service('studentService', ['$q', function($q) {
       name: 'Oleksiy Yarovyy',
       subgroup: 2,
       photo: 'images/students/yarovyy_oleksiy.jpg',
-      websiteUrl: 'http://tajmer.github.io/samleviw-1/',
-      codeSourceUrl: 'https://github.com/tajmer/samleviw-1/tree/gh-pages',
+      websiteUrl: 'http://tajmer.github.io/osy',
+      codeSourceUrl: 'https://github.com/tajmer/OSY/tree/gh-pages',
       cvUrl: 'https://www.dropbox.com/s/mj0rtbmj78fdcgo/Resume_Eng_Yarovyy.doc?dl=0'
   }, {
       name: 'Marta Dziaruk',
