@@ -247,6 +247,13 @@ app.service('studentService', ['$q', function($q) {
       codeSourceUrl: 'https://github.com/krychynska/weathercheck/tree/gh-pages',
       cvUrl: null
   }, {
+      name: 'Maria Filchagova',
+      subgroup: 3,
+      photo: 'images/students/filchagova_maria.jpg',
+      websiteUrl: 'http://filchagova.github.io/fatality/',
+      codeSourceUrl: 'https://github.com/filchagova/fatality/tree/gh-pages',
+      cvUrl: 'https://github.com/filchagova/CV/blob/gh-pages/CV_Filchagova.pdf'
+  }, {
       name: 'Dmytro Oblovatskyi',
       subgroup: 3,
       photo: 'images/students/oblovatskyi_dmytro.jpg',
