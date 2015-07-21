@@ -24,7 +24,7 @@
          </div>
         </div>
           <md-list class="student-list">
-            <md-item ng-repeat="student in students | filter: filterBySubgroup">
+            <md-item ng-repeat="student in students | filter: filterBySubgroup | orderBy: 'name'">
               <md-item-content>
                 <md-button ng-click="selectStudent(student)" ng-class="{'selected' : student === selected }">
                   <img ng-src="{{student.photo}}" class="face" alt="">

@@ -70,7 +70,7 @@ app.service('studentService', ['$q', function($q) {
       codeSourceUrl: 'https://github.com/krasnovskyy/weatherforecast/tree/gh-pages',
       cvUrl: 'https://docs.google.com/document/d/1P-HhQaChkt8jXFNpeSUdtIimdfjDXxWfPqrjZ6IBBRM/edit?usp=sharing'
   }, {
-      name: 'Kyrpychnyk Maksym',
+      name: 'Maksym Kyrpychnyk',
       subgroup: 1,
       photo: 'images/students/kyrpychnyk_maksym.jpg',
       websiteUrl: 'http://mkirpichnik.github.io/weather/',
@@ -169,14 +169,28 @@ app.service('studentService', ['$q', function($q) {
       codeSourceUrl: 'https://github.com/lyudmilaesenina',
       cvUrl: null
   }, {
-      name: 'Ira Sukanets',
+      name: 'Iryna Sukanets',
       subgroup: 2,
       photo: 'images/students/sukanets_ira.jpg',
       websiteUrl: 'http://isukanets.github.io/w/',
       codeSourceUrl: 'https://github.com/Isukanets/w',
       cvUrl: null
   }, {
-  // 154.3
+      name: 'Iryna Bohonis',
+      subgroup: 2,
+      photo: 'images/students/bohonis_iryna.jpg',
+      websiteUrl: 'http://ibogonis.github.io/WeatherService/',
+      codeSourceUrl: 'https://github.com/ibogonis/WeatherService/tree/gh-pages',
+      cvUrl: null
+  }, {
+      name: 'Bohdan Pakholok',
+      subgroup: 2,
+      photo: 'images/students/pakholok_bogdan.jpg',
+      websiteUrl: 'http://pakholok.github.io/weather/',
+      codeSourceUrl: 'https://github.com/Pakholok/weather',
+      cvUrl: 'https://github.com/Pakholok/weather/blob/gh-pages/assets/personal%20docs/My%20CV.pdf'
+  }, {
+      // 154.3
       name: 'Yevheniy Potupa',
       subgroup: 3,
       photo: 'images/students/potupa_yevheniy.jpg',
@@ -221,7 +235,7 @@ app.service('studentService', ['$q', function($q) {
   }, {
       name: 'Yuriy Muzychyn',
       subgroup: 3,
-      photo: 'images/students/muzychyn_yuriy.jpg',
+      photo: 'images/students/muzychyn_yuriy.webp',
       websiteUrl: 'http://yuriysound.github.io/wetherSim/',
       codeSourceUrl: 'https://github.com/Yuriysound/wetherSim',
       cvUrl: null
