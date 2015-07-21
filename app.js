@@ -238,7 +238,7 @@ app.service('studentService', ['$q', function($q) {
       photo: 'images/students/muzychyn_yuriy.webp',
       websiteUrl: 'http://yuriysound.github.io/wetherSim/',
       codeSourceUrl: 'https://github.com/Yuriysound/wetherSim',
-      cvUrl: null
+      cvUrl: 'https://drive.google.com/file/d/0B0fruMdlAEjCZDFXdE9kOFNnZ3c/view'
   }, {
       name: 'Oksana Krychynska',
       subgroup: 3,
