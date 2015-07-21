@@ -37,9 +37,9 @@
         <div layout="column" flex class="content-wrapper" id="primary-col">
             <md-content layout="column" flex class="md-padding">
               <h2>{{selected.name}}</h2>
-              <p>{{selected.content}}</p>
               <p>Website: <a href="{{selected.websiteUrl}}">{{selected.websiteUrl}}</a></p>
               <p>Code source: <a href="{{selected.codeSourceUrl}}">{{selected.codeSourceUrl}}</a></p>
+              <p ng-show="selected.cvUrl">CV: <a href="{{selected.cvUrl}}">{{selected.cvUrl}}</a></p>
               <div class="cell">
                 <img ng-src="{{selected.photo}}" alt="{{selected.name}}">
               </div>
