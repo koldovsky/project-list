@@ -60,7 +60,7 @@ app.service('studentService', ['$q', function($q) {
       subgroup: 1,
       photo: 'images/students/migal_andrew.jpg',
       websiteUrl: 'http://andrewmigal.github.io/Weather1/',
-      codeSourceUrl: 'https://github.com/AndrewMigal/Weather-Forecast/tree/gh-pages',
+      codeSourceUrl: 'https://github.com/AndrewMigal/Weather1/tree/gh-pages',
       cvUrl: null
   }, {
       name: 'Alexander Krasnovskyy',
